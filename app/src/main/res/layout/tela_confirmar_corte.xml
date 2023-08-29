@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CLIENTE.TelaConfirmarCorte">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="380dp"
+        android:layout_height="500dp"
+        android:backgroundTint="#AAA8A8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601">
+
+        <ImageView
+            android:id="@+id/imageBarbeiro_confirma"
+            android:layout_width="141dp"
+            android:layout_height="121dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/images_homem__3_" />
+
+        <TextView
+            android:id="@+id/preco_confirma"
+            android:layout_width="225dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="270dp"
+            android:text="Preço: "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dataHora_cofirma"
+            android:layout_width="225dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="210dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/nomeBarbeiro_confirma"
+            android:layout_width="225dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="150dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkSobrancelha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="370dp"
+            android:onClick="sobrancelha"
+            android:text="Sobrancelha"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkCorte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="370dp"
+            android:onClick="cabelo"
+            android:text="Corte"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkBarba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="430dp"
+            android:onClick="barba"
+            android:text="Barba"
+            android:textColor="@color/black" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_agendar"
+        android:layout_width="138dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#656460"
+        android:onClick="Agendar"
+        android:text="Agendar"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/btn_voltarAgendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="Voltartela"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="voltar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="115dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barbearialogo" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPM-BARBEARIA"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
